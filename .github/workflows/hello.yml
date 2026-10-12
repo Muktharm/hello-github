@@ -5,6 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: Cyb3r-Jak3/html5validator-action@v7
-        with:
-          root: ./
+      - run: npx --yes html-validate index.html
